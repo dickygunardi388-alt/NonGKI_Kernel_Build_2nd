@@ -26,7 +26,7 @@ env:
   KERNELSU_SOURCE         : ""
   KERNELSU_BRANCH         : ""
   KERNELSU_AUTO_GET       : "true"
-  KERNELSU_AUTO_FORK      : "xxksu"    # opsi: xxksu, rsuntk, next, resukisu, sukisu
+  KERNELSU_AUTO_FORK      : "resukisu"    # opsi: xxksu, rsuntk, next, resukisu, sukisu
   SUSFS_ENABLE            : true      # kernelmu UDAH ada backport SUSFS manual (commit 45d527f) — kalau true, bisa ke-patch dobel
   SUSFS_FIXED             : true
   AK3_SOURCE              : "https://github.com/osm0sis/AnyKernel3.git"
@@ -48,7 +48,7 @@ env:
   REKERNEL_ENABLE     : "true"
   DROIDSPACES_ENABLE  : "false"
   NOMOUNT_ENABLE      : "false"
-  HOOK_METHOD         : "inline"   # sesuai CONFIG_KSU_MANUAL_HOOK yg udah kamu pakai
+  HOOK_METHOD         : "syscall"   # sesuai CONFIG_KSU_MANUAL_HOOK yg udah kamu pakai
   KERNEL_PATCH        : "true"
   KPM_ENABLE          : "false"      # defconfig kamu udah CONFIG_KPM=y
   KPM_INLINE          : "false"
